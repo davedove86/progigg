@@ -1,5 +1,6 @@
 'use client';
 import { data } from '@/components/app-sidebar';
+import { ModeToggle } from '@/components/ModeToggle';
 import Image from 'next/image';
 
 export default function Page() {
@@ -7,8 +8,11 @@ export default function Page() {
 
   return (
     <div className='p-4'>
+      <div className='absolute top-5 right-5'>
+        <ModeToggle />
+      </div>
       <h1 className='text-2xl'>Account</h1>
-      <div className='bg-slate-100 flex flex-col my-6 rounded-sm p-4'>
+      <div className='bg-secondary flex flex-col my-6 rounded-sm p-4'>
         <Image
           className='h-16 w-16 rounded-full mb-6'
           src={user.avatar}

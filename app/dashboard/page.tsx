@@ -11,10 +11,14 @@ import {
 } from '@/components/ui/table';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import { ModeToggle } from '@/components/ModeToggle';
 
 export default function Page() {
   return (
     <div className='flex flex-1 flex-col gap-4 p-4 pt-0'>
+      <div className='absolute top-4 right-4'>
+        <ModeToggle />
+      </div>
       <div className='grid auto-rows-min gap-4 md:grid-cols-2'>
         <div className='aspect-video rounded-xl bg-muted/50 p-2'>
           <h2 className='text-xl mb-4'>Applied Giggs</h2>

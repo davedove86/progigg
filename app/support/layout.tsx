@@ -59,7 +59,7 @@ export default function RootLayout({
                     </BreadcrumbItem>
                     <BreadcrumbSeparator className='hidden md:block' />
                     <BreadcrumbItem>
-                      <BreadcrumbPage>Settings</BreadcrumbPage>
+                      <BreadcrumbPage>Support</BreadcrumbPage>
                     </BreadcrumbItem>
                   </BreadcrumbList>
                 </Breadcrumb>

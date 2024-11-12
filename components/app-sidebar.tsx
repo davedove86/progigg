@@ -1,7 +1,14 @@
 'use client';
 
 import * as React from 'react';
-import { LifeBuoy, Mails, Handshake, Settings, LayoutGrid } from 'lucide-react';
+import {
+  LifeBuoy,
+  Mails,
+  Handshake,
+  Settings,
+  LayoutGrid,
+  Aperture,
+} from 'lucide-react';
 
 import { NavMain } from '@/components/nav-main';
 // import { NavProjects } from '@/components/nav-projects';
@@ -106,11 +113,10 @@ export const data = {
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
-    <Sidebar variant='inset' {...props}>
-      <SidebarHeader>
-        <p className='tex-1xl font-bold'>ProGigg</p>
-      </SidebarHeader>
+    <Sidebar collapsible='icon' variant='floating' {...props}>
+      <SidebarHeader></SidebarHeader>
       <SidebarContent>
+        <Aperture className='ml-3 text-blue-500' />
         <NavMain items={data.navMain} />
         {/* <NavProjects projects={data.projects} /> */}
         <NavSecondary items={data.navSecondary} className='mt-auto' />
