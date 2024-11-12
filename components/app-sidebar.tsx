@@ -1,14 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import {
-  LifeBuoy,
-  Mails,
-  Send,
-  Handshake,
-  Settings,
-  LayoutGrid,
-} from 'lucide-react';
+import { LifeBuoy, Mails, Handshake, Settings, LayoutGrid } from 'lucide-react';
 
 import { NavMain } from '@/components/nav-main';
 // import { NavProjects } from '@/components/nav-projects';
@@ -25,7 +18,7 @@ export const data = {
   user: {
     name: 'John Doe',
     email: 'john.doe@example.com',
-    avatar: '/profile.webp',
+    avatar: '/profile.jpg',
     initials: 'JD',
     skills: ['Front End Developer', 'Back End Developer, Webflow Developer'],
   },
@@ -83,14 +76,14 @@ export const data = {
     },
     {
       title: 'Support',
-      url: '#',
+      url: '/support',
       icon: LifeBuoy,
     },
-    {
-      title: 'Feedback',
-      url: '#',
-      icon: Send,
-    },
+    // {
+    //   title: 'Feedback',
+    //   url: '#',
+    //   icon: Send,
+    // },
   ],
   // projects: [
   //   {

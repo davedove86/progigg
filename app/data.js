@@ -12,7 +12,7 @@ const jobListings = [
     name: 'Back End Developer',
     company: 'Amazon',
     skills: ['Node.js', 'Express', 'MongoDB'],
-    status: 'recieved',
+    status: 'received',
     applied: true,
   },
   {
@@ -29,7 +29,7 @@ const jobListings = [
     company: 'Webflow',
     skills: ['Webflow', 'JavaScript', 'HTML'],
     status: 'rejected',
-    applied: false,
+    applied: true,
   },
   {
     id: 5,
@@ -121,4 +121,31 @@ const jobListings = [
   },
 ];
 
-export default jobListings;
+const messages = [
+  {
+    id: 1,
+    name: 'Anna Johnson',
+    avatar: '/anna-johnson.webp',
+    message: 'Hello, how are you?',
+    company: 'Tesla',
+    time: '10:08',
+  },
+  {
+    id: 2,
+    name: 'Hayley Smith',
+    avatar: '/hayley-smith.jpg',
+    message: 'We need to talk about the project',
+    company: 'Google',
+    time: '13:10',
+  },
+  {
+    id: 3,
+    name: 'Jack Jones',
+    avatar: '/jack-jones.jpeg',
+    message: 'Lets meet at the office to discuss further',
+    company: 'Apple',
+    time: '15:36',
+  },
+];
+
+export { jobListings, messages };
